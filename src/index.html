@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/kanban.svg" type="image/x-icon">
+    <title>App Trello</title>
+</head>
+
+<body>
+    <div class="col">
+        <div class="row">
+            <div class="row">
+                <img src="./assets/kanban.svg" class="icon" alt="">
+            </div>
+            <div class="col title">
+                <h1><strong>App Trello</strong></h1>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <h3 class="subtitle">Lista de Tareas</h3>
+                </div>
+                <div class="row container-left">
+                    <div class="col-md-4 container-task">
+                        <h5 class="subtitle-task">Tarea por Hacer</h5>
+                        <div class="list-group"></div>
+                    </div>
+                    <div class="col-md-4 container-task">
+                        <h5 class="subtitle-task">Tarea en Proceso</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action" aria-current="true" id="task">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Título tarea</h5>
+                                    <small>fecha entrega</small>
+                                </div>
+                                <p class="mb-1">Descripción</p>
+                                <small>Responsable</small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 container-task">
+                        <h5 class="subtitle-task">Tarea Finalizada</h5>
+                        <div class="list-group"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col container-right">
+
+                <div class="col">
+                    <h4 class="subtitle">Crear nueva tarea</h4>
+                </div>
+                <div class="col">
+                    <form action="">
+                        <div class="col">
+                            <div class="row">
+                                <label for="titleTask"><strong>Título tarea</strong></label>
+                                <input class="form-control form-control-sm" type="text" id="titleTask"
+                                    placeholder="Ingrese el título de la tarea">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <div class="row">
+                                <label for="descriptionTask"><strong>Descripción</strong></label>
+                                <textarea class="form-control form-control-sm" name="descriptionTask"
+                                    id="descriptionTask" cols="30" rows="2"
+                                    placeholder="Ingrese la descripción de la tarea"></textarea>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <div class="row">
+                                <label for="responsibleTask"><strong>Responsable</strong></label>
+                                <select class="form-select form-select-sm" name="responsibleTask" id="responsibleTask">
+                                    <option selected>Seleccione un responsable</option>
+                                    <option value="1">Usuario 1</option>
+                                    <option value="2">Usuario 2</option>
+                                    <option value="3">Usuario 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <br>
+                        <div class="col">
+                            <div class="row">
+                                <label for="deliverDate"><strong>Fecha de entrega (DD/MM/AAAA)</strong></label>
+                                <input class="form-control form-control-sm" id="deliverDate" type="text"
+                                    placeholder="Ingrese la fecha de entrega de la tarea (DD/MM/AAAA)">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="col">
+                            <button type="button" class="button btn btn-lg" id="createTask">Crear
+                                tarea</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
