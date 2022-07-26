@@ -2,7 +2,7 @@
     "task": [
         {
             "id": 1,
-            "nameTask":"Tarea1",
+            "titleTask":"Tarea1",
             "descriptionTask": "Descripcion1",
             "responsibleTask": "Usuario1",
             "deliverDate": "18/07/2022",
@@ -11,7 +11,7 @@
         },
         {
             "id": 2,
-            "nameTask":"Tarea1",
+            "titleTask":"Tarea1",
             "descriptionTask": "Descripcion1",
             "responsibleTask": "Usuario1",
             "deliverDate": "18/07/2022",
@@ -20,7 +20,7 @@
         },
         {
             "id": 3,
-            "nameTask":"Tarea1",
+            "titleTask":"Tarea1",
             "descriptionTask": "Descripcion1",
             "responsibleTask": "Usuario1",
             "deliverDate": "18/07/2022",
