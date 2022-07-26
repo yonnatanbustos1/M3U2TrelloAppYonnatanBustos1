@@ -1,0 +1,33 @@
+{
+    "task": [
+        {
+            "id": 1,
+            "nameTask":"Tarea1",
+            "descriptionTask": "Descripcion1",
+            "responsibleTask": "Usuario1",
+            "deliverDate": "18/07/2022",
+            "creationDate": "15/07/2022",
+            "state": "to-do"
+        },
+        {
+            "id": 2,
+            "nameTask":"Tarea1",
+            "descriptionTask": "Descripcion1",
+            "responsibleTask": "Usuario1",
+            "deliverDate": "18/07/2022",
+            "creationDate": "15/07/2022",
+            "state": "in-progress"
+        },
+        {
+            "id": 3,
+            "nameTask":"Tarea1",
+            "descriptionTask": "Descripcion1",
+            "responsibleTask": "Usuario1",
+            "deliverDate": "18/07/2022",
+            "creationDate": "15/07/2022",
+            "state": "done"
+        }
+       
+    ]        
+
+}
