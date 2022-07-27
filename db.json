@@ -2,8 +2,8 @@
     "task": [
         {
             "id": 1,
-            "titleTask":"Tarea1",
-            "descriptionTask": "Descripcion1",
+            "titleTask":"Frontend",
+            "descriptionTask": "Crear proyecto frotend para la App trello",
             "responsibleTask": "Usuario1",
             "deliverDate": "18/07/2022",
             "creationDate": "15/07/2022",
@@ -11,18 +11,18 @@
         },
         {
             "id": 2,
-            "titleTask":"Tarea2",
-            "descriptionTask": "Descripcion1",
-            "responsibleTask": "Usuario1",
+            "titleTask":"Backend",
+            "descriptionTask": "Crear proyecto backend para la App trello",
+            "responsibleTask": "Usuario2",
             "deliverDate": "18/07/2022",
             "creationDate": "15/07/2022",
             "state": "in-progress"
         },
         {
             "id": 3,
-            "titleTask":"Tarea3",
-            "descriptionTask": "Descripcion1",
-            "responsibleTask": "Usuario1",
+            "titleTask":"Base Datos",
+            "descriptionTask": "Crear base de datos para la App trello",
+            "responsibleTask": "Usuario3",
             "deliverDate": "18/07/2022",
             "creationDate": "15/07/2022",
             "state": "done"

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="./styles/bootstrap-5.0.2-dist/css/bootstrap.css" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/kanban.svg" type="image/x-icon">
     <title>App Trello</title>
@@ -32,24 +33,16 @@
                 <div class="row container-left">
                     <div class="col-md-4 container-task">
                         <h5 class="subtitle-task">Tarea por Hacer</h5>
-                        <div class="list-group"></div>
+                        <div class="list-group" id="containerToDo"></div>
                     </div>
                     <div class="col-md-4 container-task">
                         <h5 class="subtitle-task">Tarea en Proceso</h5>
-                        <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action" aria-current="true" id="task">
-                                <div class="d-flex w-100 justify-content-between">
-                                    <h5 class="mb-1">Título tarea</h5>
-                                    <small>fecha entrega</small>
-                                </div>
-                                <p class="mb-1">Descripción</p>
-                                <small>Responsable</small>
-                            </a>
+                        <div class="list-group" id="containerInProgress">
                         </div>
                     </div>
                     <div class="col-md-4 container-task">
                         <h5 class="subtitle-task">Tarea Finalizada</h5>
-                        <div class="list-group"></div>
+                        <div class="list-group" id="containerDone"></div>
                     </div>
                 </div>
             </div>
@@ -59,7 +52,7 @@
                     <h4 class="subtitle">Crear nueva tarea</h4>
                 </div>
                 <div class="col">
-                    <form action="">
+                    <form id="formNewTask">
                         <div class="col">
                             <div class="row">
                                 <label for="titleTask"><strong>Título tarea</strong></label>
@@ -81,7 +74,7 @@
                             <div class="row">
                                 <label for="responsibleTask"><strong>Responsable</strong></label>
                                 <select class="form-select form-select-sm" name="responsibleTask" id="responsibleTask">
-                                    <option selected>Seleccione un responsable</option>
+                                    <option value="0" selected>--Seleccione un responsable--</option>
                                     <option value="1">Usuario 1</option>
                                     <option value="2">Usuario 2</option>
                                     <option value="3">Usuario 3</option>
@@ -93,13 +86,13 @@
                         <div class="col">
                             <div class="row">
                                 <label for="deliverDate"><strong>Fecha de entrega (DD/MM/AAAA)</strong></label>
-                                <input class="form-control form-control-sm" id="deliverDate" type="text"
+                                <input class="form-control form-control-sm" id="deliverDate" type="date"
                                     placeholder="Ingrese la fecha de entrega de la tarea (DD/MM/AAAA)">
                             </div>
                         </div>
                         <br>
                         <div class="col">
-                            <button type="button" class="button btn btn-lg" id="createTask">Crear
+                            <button type="submit" class="button btn btn-lg" id="createTask">Crear
                                 tarea</button>
                         </div>
                     </form>
@@ -107,6 +100,21 @@
             </div>
         </div>
     </div>
+
+    <script src="./app/libraries/axios.js"></script>
+    <script src="./app/libraries/sortable.js"></script>
+    <script src="./app/libraries/draggable.js"></script>
+    
+    <script src="./app/libraries/moment.js"></script>
+    <script src="./app/libraries/hammer.js"></script>
+
+    <script src="./styles/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+
+    <script src="./app/api/request.js"></script>
+    <script src="./app/helpers/draggandDrop.js"></script>
+    <script src="./app/helpers/newTask.js"></script>
+
+
 </body>
 
 </html>
