@@ -3,7 +3,7 @@
         {
             "id": 1,
             "titleTask":"Frontend",
-            "descriptionTask": "Crear proyecto frotend para la App trello",
+            "descriptionTask": "Crear proyecto frontend para la App trello",
             "responsibleTask": "Usuario1",
             "deliverDate": "18/07/2022",
             "creationDate": "15/07/2022",
