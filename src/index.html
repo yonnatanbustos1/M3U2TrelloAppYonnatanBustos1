@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="./styles/bootstrap-5.0.2-dist/css/bootstrap.css" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./assets/kanban.svg" type="image/x-icon">
     <title>App Trello</title>
@@ -75,9 +74,6 @@
                                 <label for="responsibleTask"><strong>Responsable</strong></label>
                                 <select class="form-select form-select-sm" name="responsibleTask" id="responsibleTask">
                                     <option value="0" selected>--Seleccione un responsable--</option>
-                                    <option value="1">Usuario 1</option>
-                                    <option value="2">Usuario 2</option>
-                                    <option value="3">Usuario 3</option>
                                 </select>
                             </div>
 
@@ -104,15 +100,16 @@
     <script src="./app/libraries/axios.js"></script>
     <script src="./app/libraries/sortable.js"></script>
     <script src="./app/libraries/draggable.js"></script>
-    
     <script src="./app/libraries/moment.js"></script>
     <script src="./app/libraries/hammer.js"></script>
 
     <script src="./styles/bootstrap-5.0.2-dist/js/bootstrap.js"></script>
 
-    <script src="./app/api/request.js"></script>
+    <script src="./app/api/requestTask.js"></script>
+    <script src="./app/api/requestResponsible.js"></script>
     <script src="./app/helpers/draggandDrop.js"></script>
-    <script src="./app/helpers/newTask.js"></script>
+    <script src="./app/helpers/newTask.js" type="module"></script>
+    <script src="./app/utils/validator.js" type="module"></script>
 
 
 </body>

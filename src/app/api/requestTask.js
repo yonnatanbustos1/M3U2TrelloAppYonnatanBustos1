@@ -1,7 +1,7 @@
 const API_URL = "https://my-json-server.typicode.com/yonnatanbustos1/M3U2TrelloAppYonnatanBustos1"
 
 
-axios.get(`${API_URL}/task`)
+axios.get(`${API_URL}/tasks`)
     .then((res) => {
         showAllTasks(res.data)
     }).catch((error) => {
@@ -16,7 +16,7 @@ const showAllTasks = (data) => {
 }
 
 
-const createTask = (task) => {
+const createTask = async (task) => {
 
     let newTask = document.createElement('a')
     newTask.classList.add('list-group-item')
@@ -43,9 +43,11 @@ const createTask = (task) => {
     descriptionTask.classList.add('mb-1')
     descriptionTask.innerText = `Descripción: ${task.descriptionTask}`
 
+    let responsible = await getResponsibleById(task.idResponsibleTask)
+
     let responsibleTask = document.createElement('small')
     responsibleTask.classList.add('text-muted')
-    responsibleTask.innerText = `Responsable: ${task.responsibleTask}`
+    responsibleTask.innerText = `Responsable: ${responsible.name} ${responsible.lastName} - ${responsible.chargue}`
 
     let deliverDate = document.createElement('p')
     deliverDate.innerText = `Fecha entrega: ${task.deliverDate}`
