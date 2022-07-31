@@ -4,7 +4,7 @@
             "id": 1,
             "titleTask":"Frontend",
             "descriptionTask": "Crear proyecto frontend para la App trello",
-            "responsibleTask": "Usuario1",
+            "idResponsibleTask": 2,
             "deliverDate": "18/07/2022",
             "creationDate": "15/07/2022",
             "state": "to-do"
@@ -13,7 +13,7 @@
             "id": 2,
             "titleTask":"Backend",
             "descriptionTask": "Crear proyecto backend para la App trello",
-            "responsibleTask": "Usuario2",
+            "idResponsibleTask": 1,
             "deliverDate": "18/07/2022",
             "creationDate": "15/07/2022",
             "state": "in-progress"
@@ -22,7 +22,7 @@
             "id": 3,
             "titleTask":"Base Datos",
             "descriptionTask": "Crear base de datos para la App trello",
-            "responsibleTask": "Usuario3",
+            "idResponsibleTask": 1,
             "deliverDate": "18/07/2022",
             "creationDate": "15/07/2022",
             "state": "done"
